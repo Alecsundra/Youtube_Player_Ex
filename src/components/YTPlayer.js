@@ -16,7 +16,7 @@ class YTPlayer extends Component {
     // access to player in all event handlers via event.target
     player.playVideo();
     player.seekTo(10)//plays the video at 10s, in case the video has the name of the song at the start
-    console.log (player.playerInfo.videoData.title)
+    // console.log (player.playerInfo.videoData.title)
     //that prints in consolecthe name of the song
     this.setState({
       data :{
@@ -52,7 +52,7 @@ VideoOnPlay=(event)=>{
       }
     
     };
-    console.log(opts)
+    // console.log(opts)
     const { videoId } = this.props;
     return (
       <div>
@@ -65,7 +65,7 @@ VideoOnPlay=(event)=>{
         />
      
       <GuessForm title={this.state.data.info}/>
-      <p>Hello {this.state.data.info}</p>
+      <p>Title: {this.state.data.info}</p>
       </div>
     );
 
