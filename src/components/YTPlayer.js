@@ -66,6 +66,7 @@ VideoOnPlay=(event)=>{
      
       <GuessForm title={this.state.data.info}/>
       <p>Title: {this.state.data.info}</p>
+      <p>copy-paste the title in the input to recieve the right alert</p>
       </div>
     );
 
